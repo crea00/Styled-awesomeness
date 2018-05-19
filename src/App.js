@@ -8,16 +8,19 @@ injectGlobal`
     badding: 0;
     margin: 0;
   }
-`
+`;
+
+const Card = styled.div`
+  background-color: red;
+`;
 
 const Container = styled.div`
   height: 100vh;
   width: 100%;
   background-color: pink;
-`;
-
-const Card = styled.div`
-  background-color: red;
+  $(Card) {
+    background-color: blue;
+  }
 `;
 
 const Button = styled.button`
@@ -38,6 +41,10 @@ class App extends Component {
   }
 }
 
-const Form = () => (<Card><Button>Hello</Button></Card>);
+const Form = () => (
+  <Card>
+    <Button>Hello</Button>
+  </Card>
+);
 
 export default App;
