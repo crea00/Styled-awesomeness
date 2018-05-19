@@ -15,7 +15,7 @@ class App extends Component {
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #pink;
+  background-color: pink;
 `
 
 const Button = styled.button`
